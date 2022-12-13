@@ -1,0 +1,821 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 0.8em;
+    width: auto;
+}
+
+/* section de recherche ------------------------------------------------------------------------------------------------------*/
+
+
+header {
+    margin: 2px 0px 20px 0px;
+}
+
+#logo img {
+    height: 40px;
+    padding-top: 20px;
+    transition: transform .1s;
+}
+
+nav {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 4%;
+    margin-left: 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hebergements,
+#activites {
+
+    text-decoration: none;
+    color: black;
+    padding: 23px;
+}
+
+#hebergements:hover {
+    color: #0065FC;
+    border-top: solid 2px #0065FC;
+    padding-top: 24px;
+}
+
+#activites:hover {
+    border-top: 2px #0065FC solid;
+    color: #0065FC;
+    padding-top: 24px;
+}
+
+.Base1 {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+#accroche {
+    font-weight: normal;
+}
+
+
+#recherche {
+    margin: 15px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#recherche form {
+    margin: 0;
+}
+
+#recherche i {
+    background-color: #F2F2F2;
+    padding: 12px 16px 12px 16px;
+    border-radius: 13px 0px 0px 13px;
+}
+
+#recherche input {
+    padding: 10px;
+    border: #F2F2F2 solid 1px;
+    width: 170px;
+}
+
+#ville::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+input:focus {
+    border: 0;
+    outline: none;
+}
+
+#button1 {
+    color: white;
+    background-color: #0065FC;
+    border: #0065FC solid 1px;
+    border-radius: 0px 13px 13px 0px;
+    padding: 10px 12px 10px 10px;
+    text-decoration: none;
+}
+
+#button2 {
+    visibility: hidden;
+}
+
+
+
+#filtres {
+    font-weight: bold;
+    display: flex;
+    color: black;
+    background-color: white;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.onglets {
+    border: 2px solid #F2F2F2;
+    border-left-style: hidden;
+    border-radius: 40px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    padding-right: 17px;
+    text-decoration: none;
+    color: black;
+}
+
+.onglets:hover {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 20px;
+}
+
+#coeur,
+#dog,
+#money {
+    font-size: 1.2em;
+    color: #0065FC;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    padding: 11px 14px 11px 14px;
+    margin-right: 10px;
+}
+
+#child {
+    font-size: 1.3em;
+    color: #0065FC;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    padding: 10px 16px 10px 16px;
+    margin-right: 10px;
+}
+
+#nombre {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#info {
+    font-size: 0.8em;
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+    padding: 2px 6px 2px 6px;
+    margin-right: 6px;
+}
+
+
+/* réponse de la recherche */
+
+/* Partie 1 : Hébergements à Marseille-------------------------------------------------------------------------------------------- */
+
+.Miseenpage{
+    display: flex;
+}
+
+.Base2 {
+    display: flex;
+    flex-basis: 68%;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: auto;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
+#Conteneur1 {
+    height: auto;
+    box-sizing: border-box;
+}
+
+#Panneau1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 25px 0px 25px;
+}
+
+.Base2 .titre {
+    margin: 40px 0px 10px 40px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.Element1 {
+    border: 4px solid white;
+    border-radius: 15px;
+    margin: 15px;
+    overflow: hidden;
+    background-color: white;
+    flex-grow: 1;
+    width: 265px;
+    box-shadow: 0px 5px 20px #999;
+    line-height: 18px;
+}
+
+.Element1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.image img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .1s;
+}
+
+.image {
+    overflow: hidden;
+}
+
+img:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.etoilebleue {
+    color: #0065FC;
+    font-size: 0.7em;
+}
+
+.etoilegrise {
+    color: #F2F2F2;
+    display: inline;
+}
+
+.gras {
+    font-weight: bold;
+    display: inline;
+    font-size: 1em;
+    margin: 0;
+}
+
+#afficher {
+    margin: 15px 0px 30px 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#Conteneur1 a {
+    text-decoration: none;
+}
+
+/* Partie 2 : Les plus populaires----------------------------------------------------------------------------------- */
+
+.Conteneur2 {
+    background-color: #F2F2F2;
+    width: 26%;
+    height: auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#Panneau2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 25px 0px 25px;
+}
+
+.Conteneur2 .titre {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    margin: 40px 0px 10px 35px;
+}
+
+.titre i {
+    margin-right: 12%;
+    font-size: 1em;
+}
+
+.Element2 {
+    width: 360px;
+    max-height: 130px;
+    background-color: white;
+    border: 4px white solid;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    margin: 15px 10px 15px 10px;
+    box-shadow: 0px 5px 20px #999;
+}
+
+#Panneau2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.image2 img {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .1s;
+}
+
+.image2 {
+    overflow: hidden;
+}
+
+.details2 {
+    flex-grow: 2;
+    padding-top: 2%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.etoilebleue2{
+    margin-bottom: 10px;
+}
+
+.details2 .nuit {
+    margin-top: 2%;
+}
+
+
+
+
+/* Partie 3 : Activités à Marseille-------------------------------------------------------------------------------- */
+
+.Base3{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
+#Conteneur3 {
+    height: fit-content;
+    box-sizing: border-box;
+    padding-bottom: 2%;
+    justify-content: space-between;
+}
+
+.Base3 .titre {
+    margin: 40px 0 5px 0;
+    font-size: 1.5em;
+}
+
+#Panneau3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.Element3 {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 370px;
+    box-shadow: 0px 5px 20px #999;
+    margin-bottom: 50px;
+}
+
+.Element3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.image3 img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .1s;
+}
+
+.image3 {
+    overflow: hidden;
+}
+
+.image4 img {
+    height: 195px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .1s;
+}
+
+.image4 {
+    overflow: hidden;
+}
+
+.image5 img {
+    height: 155px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform .1s;
+}
+
+.image5 {
+    overflow: hidden;
+}
+
+.image6 img {
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform .1s;
+}
+
+.image6 {
+    overflow: hidden;
+}
+
+.image7 img {
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0px -30px;
+    transition: transform .1s;
+}
+
+.image7 {
+    overflow: hidden;
+}
+
+.details3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Footer ---------------------------------------------------------------------------------------------------------*/
+
+.Conteneur4 {
+    width: 100%;
+    height: fit-content;
+    background-color: #F2F2F2;
+    padding: 20px 0px 20px 0px;
+
+}
+
+.Panneau4 {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Panneau4 .titre {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+p {
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.wrap2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.Conteneur4 .titre {
+    font-size: 1.2em;
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+/* Partie tablette------------------------------------------------------------------------------------------------------*/
+
+@media all and (min-width:769px) and (max-width: 992px) {
+
+    nav{
+        margin-left: 6%;
+
+    }
+    #Base1 {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .Base2, .Conteneur2{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+
+    .Base3{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #Panneau1,
+    #Panneau2 {
+        margin: 0px 16px 0px 16px;
+    }
+
+
+    .Element1 {
+        width: 200px;
+    }
+
+    .Conteneur2 {
+        width: 28%;
+    }
+
+    .Element2 {
+        flex-direction: column;
+        max-height: 200px;
+    }
+
+    .image2 img {
+        width: 100%;
+    }
+
+    .etoilebleue2 {
+        margin-top: 10%;
+    }
+
+    .Element3 {
+        width: 330px;
+    }
+}
+
+
+/* Partie mobile-------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.0em;
+    }
+
+    nav {
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        margin-right: 0;
+    }
+
+    #logo img {
+        height: 60px;
+        margin-left: 0;
+    }
+
+    #logo {
+        margin-bottom: 20px;
+    }
+
+    #navigateur {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    #activites,
+    #hebergements {
+        border-bottom: 3px solid #F2F2F2;
+        margin: 1px;
+        flex-grow: 1;
+        width: 65px;
+        text-align: center;
+    }
+
+    #hebergements:hover {
+        color: #0065FC;
+        border-bottom: solid 3px #0065FC;
+        border-top: none;
+    }
+
+    #activites:hover {
+        border-bottom: 3px #0065FC solid;
+        border-top: none;
+        color: #0065FC;
+    }
+
+    #filtres2 {
+        margin-right: 100%;
+        margin-bottom: 10px;
+    }
+
+    #filtres {
+        flex-wrap: wrap;
+    }
+
+    .onglets {
+        margin: 0px 15px 13px 0px;
+
+    }
+
+    .Base1 {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    h1 {
+        font-size: 1.3em;
+        padding-top: 3%;
+        padding-bottom: 2%;
+    }
+
+    #recherche i {
+        background-color: #F2F2F2;
+        padding: 12px 16px 13px 16px;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+
+    #recherche input {
+        padding: 10px;
+        border: #F2F2F2 solid 1px;
+        width: 100%;
+    }
+
+
+    #button1 {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        border: 0;
+    }
+
+    #button2 i {
+        visibility: visible;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 13px;
+        padding: 13px 14px 12px 14px;
+        margin: 0;
+        outline: none;
+        position: relative;
+        right: 10px;
+    }
+
+    #nombre {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    /* Les plus populaires mobile ------------------------------------------------------------------------------------------------------*/
+
+
+    .Miseenpage{
+        flex-direction: column-reverse;
+    }
+    .Base2 {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        margin-bottom: 2%;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: white;
+    }
+
+    .Element2 {
+        flex-grow: 1;
+        margin: 10px 15px 10px 15px;
+    }
+
+    .Conteneur2 {
+        width: 100%;
+        border-radius: 0;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+
+    .Conteneur2 .titre {
+        margin-left: 7%;
+    }
+
+    .titre i {
+        margin-right: 9%;
+    }
+
+    .etoilebleue2 {
+        margin-top: 30px;
+    }
+
+    /* Hébergements à Marseille mobile--------------------------------------------------------------------------------------------- */
+
+    #Conteneur1 {
+        width: auto;
+        background-color: white;
+        margin-right: 0;
+    }
+
+    .Base2 .titre {
+        margin-left: 7%;
+    }
+
+    .Element1 {
+        line-height: 20px;
+    }
+
+    #afficher {
+        margin-left: 7%;
+        font-size: 1.2em;
+    }
+
+    /* Activités à Marseille mobile--------------------------------------------------------------------------------------------------------- */
+
+    #Conteneur3 {
+        width: 100%;
+    }
+
+    .Base3 .titre {
+        margin-left: 7%;
+    }
+
+    .Base3{
+        margin: 0;
+    }
+
+    .Element3 {
+        border-radius: 15px;
+        margin: 15px;
+        overflow: hidden;
+        background-color: white;
+        flex-grow: 1;
+        width: 265px;
+        box-shadow: 0px 5px 20px #999;
+        line-height: 18px;
+    }
+
+    .Element3 img {
+        height: 170px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform .1s;
+    }
+
+    #Panneau1, #Panneau2, #Panneau3 {
+        margin-left:3%;
+        margin-right: 3%;
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Panneau4 {
+        width: 70%;
+        display: block;
+        justify-content: space-between;
+    }
+
+
+
+
+}
